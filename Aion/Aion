@@ -1,1 +1,43 @@
 
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Aurora-2004/UILibs/main/Aion/Obfuscated"))()
+local Lib = library:Create("Atomic")
+local Tab = Lib:Tab("Player","6022668898")
+local Tab2 = Lib:Tab("Enviroment","6022668898")
+
+Tab:Section("Section")
+
+Tab:Button("Button",function()
+    print("Button Pressed")
+end)
+
+Tab:Label("Label")
+
+Tab:Toggle("Toggle","Toggle",true,function(Value)
+    print(Value)
+end)
+
+Tab:KeyBind("Keybind","P",function(Value)
+    print(Value)
+end)
+
+Tab:TextBox("TextBox","TextBox","Text Here",function(Value)
+    print(Value)
+end)
+
+Tab:Dropdown("Dropdown","Dropdown",{"Synapse","ScriptWare","Shitnel","Krnl","Pedohurt"},true,function(Value)
+    print(Value)
+end)
+
+Tab:Slider("Slider","Slider",1,1,50,true,function(Value)
+    print(Value)
+end)
+
+Tab:Section("Section2")
+
+Tab:Button("Destroy UI",function()
+    DestroyUI()
+end)
+
+Tab:KeyBind("Toggle UI","RightShift",function(Value)
+    ToggleUI()
+end)
